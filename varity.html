@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="final.css";>
+    
+
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript">
+        
+    $('.services-container').isotope({
+        // options
+        itemSelector: '#services',
+        layoutMode: 'fitRows'
+      });
+      $('.search-menu ul li').click(function(){
+        $('.search-menu ul li').removeclass('active');
+        $(this).addclass('active');
+      
+      var selector=$(this).attr('data-filter');
+$('.search-menu').isotope({
+    filter:selector
+});
+return false;
+      });
+
+</script>
+
+
+
+
+        </div>
+    </section>
+    
+    <section class="services-container">
+    <h1 class="h-primary centre"><span>OUR SERVICES</span></h1>
+    <div id ="services">
+ 
+        <!-- <div class="box">
+            <img src="gujrati thal.jpeg"alt="gujrati">
+            <h2 class="h-secondary center">Gujrati thali</h2>
+            <P> </P>
+            
+             <a href="#" class="recipe-btn">Show recipe</a> 
+             </div>
+              <div class="box">
+                <img src="maharash.jpg"alt="idli">
+                <h2 class="h-secondary center">Mh thali</h2>
+                <P></P>   
+                 <a href="#" class="recipe-btn">Show recipe</a> -->
+                <!-- <div class ="meal-details">
+                    <button type="button"class="btn recipe-close-btn"
+                    id="recipe-close-btn">
+            <i class="fa-regular fa-xmark"></i>
+            </button> -->
+            <!-- <div class="meal-details-content">
+                <h2 class="recipe-title">meals name here</h2>
+                <p class="recipe-category">category name</p>
+                <h3>Instruction:</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in ipsa ab consectetur eaque, adipisci non quos sit maiores aperiam saepe, cupiditate reiciendis sequi quae cum iste laboriosam doloribus et.
+            </p>-->
+            
+            <!-- </div>               -->
+
+
+                
+             
+
+                <!-- <button class="btn">order now </button>  -->
+                
+                 <div class="box">
+                    <img src="dahi bhalle.jpg"alt="idli">
+                    <h2 class="h-secondary center">Dahibhalla</h2>
+                    <P></P>
+
+                      <a href="https://www.vegrecipesofindia.com/dahi-bhalla-recipe/" class="recipe-btn">Show recipe</a>   <!-- <button class="btn">order now </button>  -->
+
+                 </div>
+                     <div class="box">
+                        <img src="poha.jpg"alt="madhyapradesh">
+                        <h2 class="h-secondary center">poha</h2>
+                        <P></P>
+                        <a href="https://pipingpotcurry.com/poha-recipe/" class="recipe-btn">Show recipe</a> 
+                        <!-- <button class="btn">order now </button>  -->
+                         </div>
+                         <div class="box">
+                            <img src="aam ras.jpg"alt="idli">
+                            <h2 class="h-secondary center"> Aam ras</h2>
+                            <P></P>
+                            <a href="https://www.vegrecipesofindia.com/aamras-recipe/" class="recipe-btn">Show recipe</a> 
+                            <!-- <button class="btn">order now </button>  -->
+                             </div> 
+                             <div class="box">
+                                <img src="dosa.jpg"alt="idli">
+                                <h2 class="h-secondary center">Dosa</h2>
+                                <P></P>
+                                <a href="https://www.indianhealthyrecipes.com/dosa-recipe-dosa-batter/" class="recipe-btn">Show recipe</a>  
+                                <!-- <button class="btn">order now </button>  -->
+                                 </div> 
+                                        
+                
+
+     </div>
+    </section>
+    
+
+
+
+            
+            
+                <!-- new container of thikhi dish -->
+                
+                <section class="services-container">
+                    <h1 class="h-secondary centre"></h1>
+                    <div id ="services">
+         <div class="box">
+        <img src="idli.jpg"alt="idli">
+        <h2 class="h-secondary center">idli</h2>
+        <p></p>
+        <a href="https://www.vegrecipesofindia.com/aamras-recipe/" class="recipe-btn">Show recipe</a> 
+        
+        
+
+        
+
+        <!--  <button class="btn">order now</button> -->
+        </div>
+     <!-- for idli    -->
+
+          <div class="box">
+        <img src="khaman.jpg"alt="idli">
+        <h2 class="h-secondary center">khaman</h2>
+        <P></P>
+        <a href="https://www.indianhealthyrecipes.com/khaman-dhokla/" class="recipe-btn">Show recipe</a>
+        <!-- <button class="btn">order now</button> -->
+      </div>
+      <!-- for dasa -->
+      <div class="box">
+            <img src="puran poli.jpg"alt="idli">
+            <h2 class="h-secondary center">Puran poli</h2>
+            <P></P>
+
+             <a href="https://www.vegrecipesofindia.com/puran-poli-recipe/ "
+              class="recipe-btn">Show recipe</a>
+              <!-- <button class="btn">order now </button>   -->
+            </div>
+            <div class="box">
+                <img src="biriyani.webp"alt="idli">
+                <h2 class="h-secondary center">Pullav</h2>
+                <P></P>
+                <a href="https://www.indianhealthyrecipes.com/veg-biryani/" class="recipe-btn">Show recipe</a>
+
+                <!-- <button class="btn">order now </button> -->
+                </div> 
+  <!-- <div class="box">
+          <img src="puriamm ras.jpg"alt="idli">
+            <h2 class="h-secondary center">Aam ras</h2>
+            <P> </P>
+            <a href="#" class="recipe-btn">Show recipe</a> -->
+
+       <!-- <button class="btn">order now </button><left>        $220</left> 
+       -->
+
+            
+            </div>
+            <!-- <div class="box">
+                <img src="dahi bhalle.jpg"alt="idli">
+                  <h2 class="h-secondary center">Dahi bhalla</h2>
+                  <P> </P>
+                  <a href="#" class="recipe-btn">Show recipe</a>  
+                  </div>
+         
+         -->
+
+          
+</div>
+</section>
+
+<!-- custerd ontainer -->
+<section class="custred container">
+<h1 class="h-third centre">sweet dishes &#128536</h1>
+<div id="custred">
+    <div class="box">
+        <img src="rasgulla.jpg"alt="rasgulla">
+        <h4 class="h-forth centre"> rasgulla</h4>
+        <p class="centre" >
+
+        </p>
+        <a href="https://www.indianhealthyrecipes.com/rasgulla-recipe-bengali-rasgulla-recipe-easy-diwali-sweet-recipe/" class="recipe-btn">Show recipe</a>
+        <!-- <button class="btn">order now</button> -->
+        </div> 
+         <div class="box">
+            <img src="gajar halwa.jpg"alt="">
+            <h4 class="h-forth centre"> gajar halwa</h4>
+            <p class="centre" >
+
+            </p>
+            <a href="https://www.indianhealthyrecipes.com/carrot-halwa-recipe-gajar-ka-halwa-recipe/" class="recipe-btn">Show recipe</a> 
+            <!-- <button class="btn">order now</button> -->
+            </div> 
+             <div class="box">
+                <img src="kheer.jpg"alt="rasgulla">
+                <h4 class="h-forth centre"> kheer</h4>
+                <p class="centre" >
+    
+                </p>
+                <a href="#" class="recipe-btn">Show recipe</a> 
+                <!-- <button class="btn">order now</button> -->
+                </div> 
+
+                 <div class="box">
+                    <img src="jalebi.webp"alt="rasgulla">
+                    <h4 class="h-forth centre"> jalebi</h4>
+                    <p class="centre" > 
+        
+                    </p>
+                    <a href="https://www.indianhealthyrecipes.com/jalebi-recipe/" class="recipe-btn">Show recipe</a>   
+                    <!-- <a href="#" download class="download-btn">Download</a>   -->
+                    <!-- <button class="btn">order now</button> -->
+                    
+            </div>
+             <!-- <div class="box">
+                <img src="moong halwa.jpg"alt="rasgulla">
+                <h4 class="h-forth centre"> moong halwa</h4>
+                <p class="centre" > </p>
+                <a href="#" class="recipe-btn">Show recipe</a>
+                 <button class="btn">order now</button> -->
+                </div> 
+         
+
+
+                <!-- <div class="box">
+           <img src="rabri-recipe-1.webp"alt="rasgulla">
+                    <h4 class="h-forth centre"> rasgulla</h4>
+            <p class="centre" > </p>
+            <a href="#" class="recipe-btn">Show recipe</a> -->
+
+            <!--  <button class="btn">order now</button>                   -->
+              <!-- </div>       -->
+               </div> 
+ </section>
+
+ <!-- new custred -->
+ <section class="custred container">
+<h1 class="h-forth centre"></h1>
+<div id="custred">
+    <div class="box">
+    <img src="ras malai.webp"alt="rasgulla">
+    <h4 class="h-forth centre"> ras malai</h4>
+    <p class="centre" ></p>
+    <a href="https://www.indianhealthyrecipes.com/rasmalai-recipe-easy-rasmalai-in-10-mins-diwali-recipes/" class="recipe-btn">Show recipe</a>
+    <!-- <button class="btn">order now</button> -->
+
+    </div>
+    
+        <div class="box">
+        <img src="bundi.jpg"alt="rasgulla">
+        <h4 class="h-forth centre"> bundi laddu</h4>
+        <p class="centre" ></p> 
+        <!-- <button class="btn">order now</button> -->
+        <a href="https://hebbarskitchen.com/boondi-ladoo-recipe-boondi-laddu/" class="recipe-btn">Show recipe</a>
+     </div>
+        
+            <div class="box">
+            <img src="gulab.jpg"alt="rasgulla">
+            <h4 class="h-forth centre"> gulab jamun</h4>
+            <p class="centre" ></p>
+            <a href="https://www.indianhealthyrecipes.com/gulab-jamun-recipe-using-milk-powder/" class="recipe-btn">Show recipe</a>
+            <!-- <button class="btn">order now</button> -->
+
+            </div>
+            
+                <div class="box">
+                <img src="rabri-recipe-1.webp"alt="rasgulla">
+                <h4 class="h-forth centre"> Rabri</h4>
+                <p class="centre" ></p>
+                <a href="https://www.vegrecipesofindia.com/rabri-recipe-rabdi-recipe/" class="recipe-btn">Show recipe</a>  
+                <!-- <button class="btn">order now</button> -->
+                </div>
+                <!-- <div class="box">
+                    <img src="kalakn.jpg"alt="rasgulla">
+                    <h4 class="h-forth centre"> milk cack</h4>
+                    <p class="centre" ></p>
+                    <a href="#" class="recipe-btn">Show recipe</a>    -->
+                    <!-- <button class="btn">order now</button> -->
+                    <!-- </div>
+                    <div class="box">
+                        <img src="halwa.webp"alt="rasgulla">
+                        <h4 class="h-forth centre"> halwa</h4>
+                        <p class="centre" ></p>
+                        <a href="#" class="recipe-btn">Show recipe</a> -->
+                        <!-- <button class="btn">order now</button> -->
+<!-- </div>   -->
+</div>
+</section>
+<!-- new section -->
+<!-- <section class="moktail-juice">
+    <h1 class="h-fifth centre"></h1>
+    <div id="custred">
+        <div class="box">
+        <img src="ras malai.webp"alt="rasgulla">
+        <h4 class="h-fifth centre"> ras malai</h4>
+        <p class="centre" ></p> -->
+        <!-- <button class="btn">order now</button> -->
+    
+        <!-- </div> -->
+        
+            
+                <!-- <div class="box">
+                <img src="ras malai.webp"alt="rasgulla">
+                <h4 class="h-fifth centre"> ras malai</h4>
+                <p class="centre" ></p>
+                <button class="btn">order now</button> -->
+            
+                <!-- </div>  -->
+            
+                
+                        <!-- <div class="box">
+                        <img src="ras malai.webp"alt="rasgulla">
+                        <h4 class="h-fifth centre"> ras malai</h4>
+                        <p class="centre" ></p> -->
+                        <!-- <button class="btn">order now</button> -->
+                    
+                        <!-- </div> -->
+                        
+                    
+                                <!-- <div class="box">
+                                <img src="ras malai.webp"alt="rasgulla">
+                                <h4 class="h-fifth centre"> ras malai</h4>
+                                <p class="centre" ></p>
+                                 <button class="btn">order now</button> -->
+                            
+                                <!-- </div> --> 
+                                                                         
+        <!-- </div>
+        </section> -->
+
+
+
+
+ <!-- clients start here -->
+ 
+ 
+<!-- <section class="our clients">
+<h1 class="h-sixth centre">our clients</h1>
+<div id="clients">
+    <div class="box">
+
+
+    </div>
+    </div>
+    </section>
+  -->
+<!-- clients -->
+
+</body>
+</html>

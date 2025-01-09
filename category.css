@@ -1,0 +1,269 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+.filter-gallary{
+padding: 100px;
+
+}
+.portfolio-menu{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.portfolio-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 10px 20px;
+    cursor:pointer;
+    text-align: center;
+}
+.portfolio-menu ul li:hover{
+    color: white;
+    background: rgb(240, 132, 32);
+    border-radius: 8px;
+
+}
+li.active{
+    color: white;
+    background: rgb(248, 124, 23);
+    border-radius: 8px; 
+}
+.portfolio-menu{
+    width: 100%;
+
+}
+.portfolio-item .item{
+width: 260px;
+height:260px;
+float:left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 4px 21px -12px;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+}
+.portfolio-item .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: sans-serif;
+
+}
+input{
+    display: none;
+}
+.container{
+width: 100%;
+text-align: center;
+}
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: crimson;
+    bottom: -10px;
+    left:50%;
+    transform: translateX(-50%);
+    animation:animate 4s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+.top-content{
+    background-color: rgb(243, 243, 243);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+border-radius: 5px;
+box-shadow: 3px 3px 5px lightgray;
+/* padding-bottom: 10px; */
+ margin-bottom: 15px; 
+}
+h3{
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+    line-height: 60px;
+    padding: 0 50px;
+    color: rgb(249, 91, 91);
+}
+/* for hover effect
+.pic .spicy .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255,123,0,0.8);
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 18px;
+}
+.pic .spicy:hover .overlay{
+    opacity: 1;
+
+} */
+.pic:hover{
+    transform: translate(0px,-100px);
+}
+.button{
+    background-color: orange;
+}
+    
+label{
+    display: inline-block;
+    height: 100%;
+    padding: 0 10px;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: grey;
+    cursor: pointer;
+    transition: color .5s;
+}
+label:hover{
+    color: black;
+}
+.our-categories{
+    width: 90%;
+    margin: auto;
+     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:20px; 
+
+}
+.pic{
+    position: relative;
+     height: 200px; 
+   
+    border-radius: 10%;
+    box-shadow: 13px 13px 15px lightgray;
+cursor: pointer;
+padding-bottom: 20%;
+
+
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    background-position: cover;
+    
+}
+.pic img :hover{
+transform: translate(0px -19px);
+}
+ .h-nine {
+text-align: center;
+color: black;
+
+} 
+.pic ::before{
+    content: " Dishes";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity:0;
+    transition: .3s;
+    transition-delay: .2s;
+}
+.pic:after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+     background-color: rgb(0,0,0,.4,);
+    bottom: 0%;
+    left: 0%;
+    border-radius: 10px;
+   transition: .3s; 
+}
+.pic:hover::after{
+    height: 100%;
+
+}
+.pic:hover::before{
+    margin-top:0 ;
+}
+#check1:checked ~ .container .our-categories .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .0s;
+}
+#check2:checked ~ .container .our-categories .All {
+     opacity: 1;
+    transform: scale(1);
+    position: relative;
+}#check2:checked ~ .container .our-categories .custerd{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute; 
+    transition: 0s;
+}
+/* #check2:checked~ .container .our-categories.,{ */
+    #check3:checked ~ .container .our-categories .spicy{
+        opacity: 1;
+       transform: scale(1);
+       position: relative;
+   }#check3:checked ~ .container .our-categories .spicy{
+       opacity: 0;
+       transform: scale(0);
+       position: absolute; 
+       transition: 0s;
+   }
+   @media(max-width:1000px){
+    .All{
+        width:45%
+    }
+   }
+   @media(max-width:750px){
+    .All{
+        width: 100%;
+    }
+   }
+.button{
+    color: orangered;
+}

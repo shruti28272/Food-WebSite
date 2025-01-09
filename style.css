@@ -1,0 +1,75 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variables */
+:root{
+   --navbar-height:59px;
+}
+/* navigation bar */
+#navbar{
+     display: flex ; 
+    align-items:  justify center;
+}
+/* navigation bar:logo and image */
+#logo{
+    margin:0px 10px;
+}
+#logo img{
+    height:50%;
+    margin:3px 6px;
+}
+/* navigation bar list styling */
+#navbar{
+    position: relative;
+}
+ul{
+    display:flex;
+}
+#navbar::before
+{
+    content: "";
+    background-color: gold;
+    position: absolute;
+    height: 30%;
+    width:100%;
+    z-index: -1;
+    opacity:0.4;
+}
+#navbar ul li{
+    /* color:white; */
+     list-style:none ;
+     font: size 1.3em; ;
+
+}
+#navbar ul li a{
+    color:rgb(202, 27, 27);
+    display: block;
+    padding:3px 20px;
+    border-radius:20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(209, 209, 248);
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+

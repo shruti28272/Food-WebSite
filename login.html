@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+
+    <link rel="stylesheet"href="login.css";>
+    <!-- <script type="text/javascript">href="dummy.js";></script> -->
+    <title>login us</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function validform(){
+            var name = document.myform.name.value;
+            var passward=document.myform.passward.value;
+            if (name ==null || name ==""){
+                alert("name can't be empty!");
+                return false;
+            }
+            else if(passward.length<4){
+                alert("passward must be least 6 character");
+                return false;
+            }
+        }
+    </script>
+    <form name="myform"method="post"on submit="return validform()">
+    
+   
+        
+
+           
+    
+   
+        <div class="login-box">
+                
+                <h1>LOGIN</h1>
+                <div class="logbox">
+                   
+              
+                 <i class="fa-solid fa-user"></i> 
+            
+            
+            <input type="text"placeholder="enter your name" name=" name">
+            
+            
+        </div>
+            
+            
+             <div class="logbox">
+         <i class="fa-solid fa-envelope"></i> 
+                  <input type="no"placeholder="email id" name="email">
+                
+            
+            
+             </div> 
+            
+             <div class="logbox">
+                 <i class="fa-solid fa-lock"></i> 
+            
+                
+                <input type="passward"placeholder="passward" name="passward">
+                <!-- <i class="fa-brands fa-lock"></i> -->
+                <!-- <i class="fa-solid fa-lock"></i> -->
+            
+            
+             </div>
+            
+         <div class="logbox"> 
+            <input type="button"value="login"placeholder="login" name="">
+             </div> 
+            </div>
+  </form>
+                
+        
+            
+            
+            
+            
+            
+            </body>
+            </html>            
+            
+                
+            

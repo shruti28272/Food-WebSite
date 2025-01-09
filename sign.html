@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet"href="sign.css">
+    
+</head>
+<body>
+    <script type="text/javascript">
+        function validform(){
+            var name = document.myform.name.value;
+            var passward=document.myform.passward.value;
+            if(name ==null || name ==""){
+                alert("name can't be empty!");
+                return false;
+            }
+            else if(passward.length<4){
+                alert("passward must be least 6 chyaracter");
+                return false;
+            }
+        }
+    </script>
+    <form name="myform"method="post"on submit="return valid form()"> 
+    <div class="signup-form">
+        <h1>SIGNUP</h1>
+        <form action="#"method="post">
+            <p>name:</p>
+            <input type="enter your name"type="text type"placeholder="your name">
+            <div>
+                <p>email:</p>
+            <input type="email"type="text" placeholder="your address">
+            </div>
+            <div>
+                <p>mobile:</p>
+            <input type="mobile no" type="no" placeholder="enter your no">
+            </div>
+            <div>
+                <p>address:</p>
+            <input type="address" type="text" placeholder="enter your address">
+            </div>
+            <div>
+                <p>passward:</p>
+            <input type="passward"type="text"placeholder="enter your passward">
+            </div>
+            <div>
+                <p>confirm:</p>
+            <input type="confirm passward"type="text"placeholder="confirm passward">
+            </div>
+            <button class="button" ><h3>Submit</h3></a> </button> 
+        
+        </form>
+    </div>
+    
+</body>
+</html>
